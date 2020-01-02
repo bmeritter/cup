@@ -1,6 +1,8 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import './index.scss'
+import Gallery from './gallery';
+import Products from './products';
 
 export default class Index extends Component {
 
@@ -28,7 +30,8 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+        <Gallery></Gallery>
+        <Products></Products>
       </View>
     )
   }

@@ -1,0 +1,24 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery {
+  height: 774px;
+  white-space: nowrap;
+
+  View {
+    display: inline-block;
+    height: 100%;
+    width: 85%;
+    border-radius: 2px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #fef;
+  }
+
+  View + View {
+    margin-left: 16px;
+  }
+}

@@ -2,6 +2,7 @@
   "extends": ["taro", "plugin:@typescript-eslint/recommended"],
   "parser": "@typescript-eslint/parser",
   "rules": {
+    "quotes": ["error", "single", { "allowTemplateLiterals":  true}],
     "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
     "@typescript-eslint/explicit-function-return-type": 0,

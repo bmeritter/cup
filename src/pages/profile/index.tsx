@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { OpenData, View } from '@tarojs/components';
 import './index.scss';
+import Order from './orders/order';
 
 export default class Profile extends Component {
   render() {
@@ -10,6 +11,8 @@ export default class Profile extends Component {
           <OpenData className='avatar' type='userAvatarUrl' />
           <OpenData type='userNickName' />
         </View>
+
+        <Order></Order>
       </View>
     );
   }

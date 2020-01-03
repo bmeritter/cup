@@ -20,7 +20,9 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/profile/index',
+      'pages/product/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -39,11 +41,11 @@ class App extends Component {
           text: '首页',
         },
         {
-          pagePath: 'pages/index/index',
+          pagePath: 'pages/product/index',
           text: '商城',
         },
         {
-          pagePath: 'pages/index/index',
+          pagePath: 'pages/profile/index',
           text: '我的',
         }
       ],

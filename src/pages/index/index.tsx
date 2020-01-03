@@ -2,7 +2,7 @@ import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 import Gallery from './gallery';
-import Products from './products';
+import Products from '../../components/products/products';
 
 export default class Index extends Component {
 

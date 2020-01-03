@@ -1,12 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View } from "@tarojs/components";
+import Products from '../../components/products/products';
 
 export default class Product extends Component {
   render() {
     return (
-      <View>
-        Product
-      </View>
+      <Products></Products>
     );
   }
 

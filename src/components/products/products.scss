@@ -8,6 +8,10 @@
     display: flex;
     flex-direction: column;
 
+    View, Text {
+      margin-top: 8px;
+    }
+
     .img {
       width: 100%;
       height: 100px;

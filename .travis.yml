@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-  12
+  - 12
+cache:
+  directories:
+    - node_modules
 script:
-  yarn build:weapp
+  - yarn build:weapp
 on:
   master

@@ -1,5 +1,5 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import './index.scss'
 import Gallery from './gallery';
 import Products from './products';
@@ -31,7 +31,13 @@ export default class Index extends Component {
     return (
       <View className='index'>
         <Gallery></Gallery>
-        <Products></Products>
+        <View className='product-container'>
+          <View className='title'>
+            <Text>精选单品</Text>
+            <Text>查看全部</Text>
+          </View>
+          <Products></Products>
+        </View>
       </View>
     )
   }

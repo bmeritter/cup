@@ -1,0 +1,10 @@
+.product-container {
+  margin-top: 32px;
+  padding: 0 16px;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

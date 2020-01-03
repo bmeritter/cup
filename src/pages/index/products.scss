@@ -1,0 +1,17 @@
+.products {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 16px;
+
+  .product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .img {
+      width: 100%;
+      height: 100px;
+      background-color: #fef;
+    }
+  }
+}

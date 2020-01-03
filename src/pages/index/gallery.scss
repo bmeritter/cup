@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 16px;
 }
 
 .gallery {
-  height: 774px;
+  height: 370px;
   white-space: nowrap;
 
   View {
@@ -16,6 +17,14 @@
     text-align: center;
     overflow: hidden;
     background-color: #fef;
+
+    &:first-child {
+      margin-left: 16px;
+    }
+
+    &:last-child {
+      margin-right: 16px;
+    }
   }
 
   View + View {

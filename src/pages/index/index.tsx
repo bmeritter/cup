@@ -10,14 +10,18 @@ export default class Index extends Component {
     navigationBarTitleText: '首页'
   };
 
-  render () {
+  onClick = () => {
+    Taro.switchTab({url: '/pages/product/index'});
+  };
+
+  render() {
     return (
       <View className='index'>
         <Gallery></Gallery>
         <View className='product-container'>
           <View className='title'>
             <Text>精选单品</Text>
-            <Text>查看全部</Text>
+            <View onClick={this.onClick}>查看更多</View>
           </View>
           <Products></Products>
         </View>

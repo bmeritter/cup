@@ -22,7 +22,7 @@ export default class Products extends Component {
               <View className='img'></View>
               <Text>{product.name}</Text>
               <Text>{product.description}</Text>
-              <Text>{product.price}</Text>
+              <Text>￥{product.price}</Text>
             </View>)
           )
         }

@@ -1,11 +1,12 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View } from "@tarojs/components";
+import { OpenData, View } from "@tarojs/components";
 
 export default class Profile extends Component {
   render() {
     return (
       <View>
-        Profile
+        <OpenData type='userAvatarUrl'/>
+        <OpenData type="userNickName"/>
       </View>
     );
   }
